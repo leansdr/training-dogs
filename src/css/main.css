@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Changa One", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --transparent-green: #64963990;
+  --green:#649639;
+  --black: #111111;
+  --white: #fff;
+  --gray: #808080;
+}
+
+#header .content #inner-header {
+  height: 4.75rem;
+  display: flex;
+}
+#header #banner {
+  background-image: url("../../public/images/cao-correndo.jpg");
+  height: 772px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#header #banner #banner-info {
+  width: 461px;
+  height: 627px;
+  background-color: var(--transparent-green);
+  top: 60px;
+  left: 100px;
+  bottom: 60px;
+  position: absolute;
+  padding: 30px 50px;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 576px) {
+  /*HEADER*/
+  .menu-opened {
+    width: 60% !important;
+  }
+  #header {
+    position: relative;
+    width: auto;
+  }
+  #header .content {
+    width: 21.25rem;
+  }
+  #header .content #inner-header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .content #inner-header figure {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #header .content #inner-header figure img {
+    width: 100%;
+    height: 100%;
+  }
+  #header .content #inner-header #navbar {
+    display: none;
+  }
+  #header .content #inner-header #menu {
+    font-size: 2.5rem;
+  }
+  #header .content #inner-header #mobile-navbar {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 0.5s ease;
+  }
+  #header .content #inner-header #mobile-navbar #close-menu {
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #header .content #inner-header #mobile-navbar #mobile-navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header .content #inner-header #mobile-navbar #mobile-navbar-list .mobile-navbar-item {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--white);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.25rem;
+  }
+  #header #banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33rem;
+    background-position-x: -24rem;
+    width: auto;
+    position: relative;
+  }
+  #header #banner .content #banner-info {
+    width: 15rem;
+    height: 26rem;
+    background-color: var(--transparent-green);
+    top: 3rem;
+    left: 3rem;
+    bottom: 3rem;
+    position: absolute;
+    padding: 0.9rem;
+    border-radius: 0.3rem;
+  }
+  #header #banner .content #banner-info #banner-info-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: var(--white);
+  }
+  #header #banner .content #banner-info #banner-info-subtitle {
+    font-size: 3rem;
+    font-size: 400;
+    font-family: "Changa One";
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+  }
+  #header #banner .content #banner-info #banner-info-description {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    margin: 2rem 0px;
+    color: var(--white);
+  }
+  #header #banner .content #banner-info #banner-info-button {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--green);
+    outline: none;
+    border: none;
+    font-weight: bold;
+  }
+  #advanced-training {
+    background-color: var(--green);
+    max-height: 52rem;
+    padding: 4rem 0;
+  }
+  #advanced-training .content {
+    width: 21.25rem;
+  }
+  #advanced-training .content #advanced-training-information {
+    display: flex;
+    flex-direction: column;
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item {
+    flex: 1;
+    padding: 20px 10px 20px 0px;
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item #advanced-training-item-title {
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: "Changa One";
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item #line {
+    height: 3px;
+    background-color: var(--white);
+    width: 150px;
+    margin: 30px 0;
+    display: block;
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item #advanced-training-item-subtitle {
+    color: #c8f099;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 24px;
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  #advanced-training .content #advanced-training-information .advanced-training-item ul li {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    color: var(--white);
+  }
+  #reason-helps {
+    padding: 98px 0px;
+    height: 41rem;
+  }
+  #reason-helps .content {
+    width: 21.25rem;
+    position: relative;
+  }
+  #reason-helps .content figure {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 1.25rem;
+    position: relative;
+  }
+  #reason-helps .content figure img {
+    width: 100%;
+    height: 100%;
+  }
+  #reason-helps .content #reason {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 8rem;
+    width: 20.18rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+  }
+  #reason-helps .content #reason #reason-info {
+    padding: 28px;
+    position: absolute;
+  }
+  #reason-helps .content #reason #reason-info #reason-title {
+    font-size: 400;
+    font-size: 48px;
+    font-family: "Changa One";
+    color: var(--green);
+  }
+  #reason-helps .content #reason #reason-info #reason-question {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Open Sans";
+    margin: 20px 0;
+  }
+  #reason-helps .content #reason #reason-info #reason-link {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: var(--green);
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+  }
+  #your-best {
+    background-color: var(--green);
+    padding: 60px 0;
+    height: 1057px;
+  }
+  #your-best .content {
+    width: 21.25rem;
+  }
+  #your-best .content #your-best-container #your-best-main #your-best-title {
+    font-size: 30px;
+    font-family: "Changa One";
+    font-weight: 400;
+    width: 320px;
+  }
+  #your-best .content #your-best-container #your-best-main #line {
+    height: 3px;
+    background-color: var(--white);
+    width: 150px;
+    margin: 30px 0;
+    display: block;
+  }
+  #your-best .content #your-best-container #your-best-main #your-best-main-text {
+    color: #c8f099;
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #your-best .content #your-best-container #your-best-description .your-best-text {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    color: var(--white);
+    margin-bottom: 30px;
+  }
+  #your-best .content #your-best-container #your-best-description #your-best-button {
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--green);
+    outline: none;
+    border: none;
+    font-weight: bold;
+  }
+  #how-train-dog {
+    height: 706px;
+    padding: 60px 0;
+  }
+  #how-train-dog .content {
+    width: 21.25rem;
+  }
+  #how-train-dog .content #how-train-dog-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #how-train-dog .content #how-train-dog-container figure {
+    width: 320px;
+    height: 255px;
+    position: absolute;
+    right: 0;
+  }
+  #how-train-dog .content #how-train-dog-container figure img {
+    width: 100%;
+    height: 100%;
+  }
+  #how-train-dog .content #how-train-dog-container #card-how-train-dog {
+    position: absolute;
+    background-color: var(--white);
+    top: 210px;
+    width: 331px;
+    height: 368px;
+    padding: 30px;
+  }
+  #how-train-dog .content #how-train-dog-container #card-how-train-dog h4 {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+  }
+  #how-train-dog .content #how-train-dog-container #card-how-train-dog h1 {
+    font-size: 48px;
+    font-family: "Changa One";
+    font-weight: 400;
+    color: var(--green);
+    margin-bottom: 20px;
+  }
+  #how-train-dog .content #how-train-dog-container #card-how-train-dog p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    color: var(--black);
+    margin-bottom: 20px;
+  }
+  #how-train-dog .content #how-train-dog-container #card-how-train-dog a {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: var(--green);
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+  }
+  #steps-to-train {
+    background-color: var(--green);
+    padding: 63px 0;
+  }
+  #steps-to-train .content {
+    width: 21.25rem;
+  }
+  #steps-to-train .content #steps-train-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #steps-to-train .content #steps-train-container #steps-training {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 3;
+  }
+  #steps-to-train .content #steps-train-container #steps-training #step-item {
+    width: 340px;
+    height: auto;
+    background-color: var(--white);
+    gap: 1px;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  #steps-to-train .content #steps-train-container #steps-training #step-item h1 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Oswald";
+  }
+  #steps-to-train .content #steps-train-container #steps-training #step-item h5 {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-top: 20px;
+  }
+  #steps-to-train .content #steps-train-container #steps-training #step-item p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    color: var(--gray);
+    margin-top: 18px;
+    text-align: justify;
+  }
+  #steps-to-train .content #steps-train-container figure {
+    flex: 1;
+  }
+  #steps-to-train .content #steps-train-container figure img {
+    width: 100%;
+    height: 100%;
+  }
+  #testimonials {
+    padding: 50px 0;
+    height: 485px;
+  }
+  #testimonials .content {
+    width: 21.25rem;
+  }
+  #testimonials .content #testimonials-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #testimonials .content #testimonials-container figure {
+    width: 98px;
+    height: 98px;
+    margin-bottom: 25px;
+  }
+  #testimonials .content #testimonials-container figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  #testimonials .content #testimonials-container #testimonials-description {
+    position: relative;
+  }
+  #testimonials .content #testimonials-container #testimonials-description #quote {
+    font-size: 120px;
+    color: var(--transparent-green);
+    position: absolute;
+    top: -20px;
+    left: -30px;
+  }
+  #testimonials .content #testimonials-container #testimonials-description p {
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: var(--black);
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+  #contact {
+    height: 523px;
+    background-color: var(--green);
+    text-align: center;
+    padding: 60px 0;
+  }
+  #contact .content {
+    width: 21.25rem;
+  }
+  #contact .content #contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .content #contact-container #contact-info {
+    padding: 30px;
+  }
+  #contact .content #contact-container #contact-info h3 {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Roboto";
+    color: var(--black);
+  }
+  #contact .content #contact-container #contact-info address {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: var(--black);
+    margin-top: 30px;
+  }
+  #contact .content #contact-container #contact-options-container {
+    background-color: var(--white);
+    padding: 30px 0;
+  }
+  #contact .content #contact-container #contact-options-container h2 {
+    color: var(--green);
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Roboto";
+  }
+  #contact .content #contact-container #contact-options-container #contact-options {
+    margin-top: 20px;
+  }
+  #contact .content #contact-container #contact-options-container #contact-options p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    line-height: 1.5rem;
+    color: var(--black);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

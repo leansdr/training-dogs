@@ -1,0 +1,25 @@
+#header {
+  .content {
+    #inner-header {
+      height: 4.75rem;
+      display: flex;
+    }
+  }
+  #banner {
+    background-image: url('../../public/images/cao-correndo.jpg');
+    height: 772px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    #banner-info {
+      width: 461px;
+      height: 627px;
+      background-color: var(--transparent-green);
+      top: 60px;
+      left: 100px;
+      bottom: 60px;
+      position: absolute;
+      padding: 30px 50px;
+    }
+  }
+}
