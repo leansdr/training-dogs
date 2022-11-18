@@ -291,7 +291,7 @@
           flex-direction: column;
           gap: 2px;
           flex: 3;
-          #step-item {
+          .step-item {
             width: 340px;
             height: auto;
             background-color: var(--white);
@@ -302,6 +302,18 @@
               font-size: 30px;
               font-weight: 700;
               font-family: "Oswald";
+            }
+            #item-01{
+              color: var(--yellow);
+            }
+            #item-02{
+              color: var(--light-gray);
+            }
+            #item-03{
+              color: var(--dark-gray);
+            }
+            #item-04{
+              color: var(--light-green);
             }
             h5 {
               font-weight: 400;
@@ -368,44 +380,44 @@
       }
     }
   }
-  #contact{
+  #contact {
     height: 523px;
     background-color: var(--green);
     text-align: center;
     padding: 60px 0;
-    .content{
+    .content {
       width: 21.25rem;
-      #contact-container{
+      #contact-container {
         display: flex;
         flex-direction: column;
-        #contact-info{
+        #contact-info {
           padding: 30px;
-          h3{
+          h3 {
             font-weight: 400;
             font-size: 24px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
             color: var(--black);
           }
-          address{
+          address {
             font-weight: 400;
             font-size: 20px;
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             color: var(--black);
             margin-top: 30px;
           }
         }
-        #contact-options-container{
+        #contact-options-container {
           background-color: var(--white);
           padding: 30px 0;
-          h2{
+          h2 {
             color: var(--green);
             font-weight: 400;
             font-size: 24px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
           }
-          #contact-options{
+          #contact-options {
             margin-top: 20px;
-            p{
+            p {
               @include mixins.text(--black);
             }
           }

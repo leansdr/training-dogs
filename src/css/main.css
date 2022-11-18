@@ -22,6 +22,10 @@ ul {
   --black: #111111;
   --white: #fff;
   --gray: #808080;
+  --light-green: #8bc9ba;
+  --dark-gray: #4d4d4d;
+  --yellow: #fabd02;
+  --light-gray:#999;
 }
 
 #header .content #inner-header {
@@ -388,7 +392,7 @@ ul {
     gap: 2px;
     flex: 3;
   }
-  #steps-to-train .content #steps-train-container #steps-training #step-item {
+  #steps-to-train .content #steps-train-container #steps-training .step-item {
     width: 340px;
     height: auto;
     background-color: var(--white);
@@ -396,12 +400,24 @@ ul {
     text-align: center;
     padding: 30px 10px;
   }
-  #steps-to-train .content #steps-train-container #steps-training #step-item h1 {
+  #steps-to-train .content #steps-train-container #steps-training .step-item h1 {
     font-size: 30px;
     font-weight: 700;
     font-family: "Oswald";
   }
-  #steps-to-train .content #steps-train-container #steps-training #step-item h5 {
+  #steps-to-train .content #steps-train-container #steps-training .step-item #item-01 {
+    color: var(--yellow);
+  }
+  #steps-to-train .content #steps-train-container #steps-training .step-item #item-02 {
+    color: var(--light-gray);
+  }
+  #steps-to-train .content #steps-train-container #steps-training .step-item #item-03 {
+    color: var(--dark-gray);
+  }
+  #steps-to-train .content #steps-train-container #steps-training .step-item #item-04 {
+    color: var(--light-green);
+  }
+  #steps-to-train .content #steps-train-container #steps-training .step-item h5 {
     font-weight: 400;
     font-size: 20px;
     font-family: "Roboto";
@@ -409,7 +425,7 @@ ul {
     letter-spacing: 0.25rem;
     margin-top: 20px;
   }
-  #steps-to-train .content #steps-train-container #steps-training #step-item p {
+  #steps-to-train .content #steps-train-container #steps-training .step-item p {
     font-weight: 400;
     font-size: 16px;
     font-family: "Open Sans";
